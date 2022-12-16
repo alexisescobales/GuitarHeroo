@@ -1,0 +1,164 @@
+@font-face{
+    font-family: 'miFuente';
+    src: url(./arcade.ttf);
+}
+
+@font-face{
+    font-family: 'digital';
+    src: url(./digital.ttf);
+}
+
+body {
+   background-image: url(./img/palau_musica.jpg);
+   background-position: top;
+   align-items: center;
+   margin: 0 auto;
+}
+
+
+#marcador {
+    height: 250px;
+    width: 300px;
+    font-family: 'miFuente';
+    background-color: #837a7a;
+    float: left;
+    margin-right: 0px;
+    margin-left: 360px;
+    color: black;
+    font-size: 45px;
+    margin-top: 690px;
+}
+
+#marcador .circulo{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: rgb(66, 61, 61);
+    position: relative;
+    left:90px;
+    top: -30px;
+    border-style: ridge;
+}
+
+/* #marcador h2{
+margin-left: 12px;
+color: black;
+} */
+
+#marcador p{
+font-size: 60px;
+color: rgb(0, 0, 0);
+margin-left: 115px;
+margin-top: 20px;
+}
+
+
+#screen {
+    /*background-image: url(./img/background_screen.jpg);*/
+    background-image: linear-gradient(
+    to bottom right,
+    #9664bb 0%,
+    #6f37a4 20%,
+    #95289b 40%,
+    #fe7098 60%,
+    #f973d2 80%
+    );
+    animation: movimiento 5s linear infinite alternate;
+    background-size: 200% 200%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 900px;
+    margin: 0 auto;
+    margin-left: 660px;
+    margin-right: 0px;
+    position: relative;
+}
+
+@keyframes movimiento{
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+------------ICONOS--------------- 
+
+
+#iarrow_img {
+    width: 100px;
+    height: 100px;
+}
+
+.arrow{
+    width: 85px;
+    height: 85px;       
+    background-size: cover;
+    position: absolute;
+}
+
+.aleft {
+    left: 45px; 
+    background-image: url('./img/left_icon.png');
+}
+
+.aup {
+    left: 200px;
+    background-image: url('./img/up_icon.png');
+}
+
+.adown{
+    right: 200px;
+    background-image: url('./img/down_icon.png');
+}
+
+.aright{
+    right: 45px;
+    background-image: url('./img/right_icon.png');
+}
+
+.aright_x1{
+    right: 45px;
+    background-image: url('./img/right_icon.png');
+}
+
+.aright_x2{
+    right: 45px;
+    background-image: url('./img/right_icon.png');
+}
+
+
+
+
+
+.arrow_press {
+    width: 85px;
+    height: 85px;
+    bottom: 65px;
+    background-size: cover;
+    position: absolute;
+}
+
+#apleft {
+    left: 45px;
+    background-image: url('./img/left_icon.png');
+}
+
+#apup {
+    left: 200px;
+    background-image: url('./img/up_icon.png');
+}
+
+#apdown {
+    right: 200px;
+    background-image: url('./img/down_icon.png');
+}
+
+#apright {
+    right: 45px;
+    background-image: url('./img/right_icon.png');
+}
